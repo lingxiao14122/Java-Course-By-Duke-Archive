@@ -48,5 +48,14 @@ public class Part1 {
         dna = "ATGTTTAATAA";
         System.out.println("DNA : " + dna);
         System.out.println(findSimpleGene(dna));
+        //
+        dna = "AAATGCCCTAACTAGATTAAGAAACC";
+        System.out.println("DNA : " + dna);
+        System.out.println(findSimpleGene(dna));
+    }
+
+    public static void main(String[] args) {
+        Part1 inst = new Part1();
+        inst.testFindSimpleGene();
     }
 }
