@@ -61,14 +61,36 @@ public class Part1 {
     public void tester() {
         FileResource fr = new FileResource();
         CSVParser parser = fr.getCSVParser();
+
         System.out.println( countryInfo(parser, "Germany") );
         
         parser = fr.getCSVParser();
         listExportersTwoProdicts(parser, "gold", "diamonds");
+
         parser = fr.getCSVParser();
         System.out.println( numberOfExporters(parser, "gold") );
+
         parser = fr.getCSVParser();
         bigExporters(parser, "$999,999,999");
+    }
+
+    public void quiz() {
+        FileResource fr = new FileResource();
+        CSVParser parser = fr.getCSVParser();
+
+        // System.out.println( countryInfo(parser, "Germany") );
+        System.out.println( countryInfo(parser, "Nauru") );
+        
+        parser = fr.getCSVParser();
+        listExportersTwoProdicts(parser, "gold", "diamonds");
+
+        parser = fr.getCSVParser();
+        System.out.println( numberOfExporters(parser, "sugar") );
+
+        parser = fr.getCSVParser();
+        // bigExporters(parser, "$999,999,999");
+
+        bigExporters(parser, "$999,999,999,999");
     }
 
     public static void main(String[] args) {
